@@ -18,6 +18,9 @@ Din folderul proiectului:
 Aplicația pornește pe `http://localhost:8080`.
 Datele sunt păstrate în memorie și se șterg la oprirea aplicației.
 
+Consola bazei de date: `http://localhost:8080/h2-console`
+(JDBC URL: `jdbc:h2:mem:librarydb`, utilizator: `sa`, parolă: goală)
+
 ## Endpoint-uri
 ### Cărți
 
