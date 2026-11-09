@@ -3,6 +3,7 @@ package com.example.library.controller;
 import com.example.library.entity.Book;
 import com.example.library.service.BookService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +29,7 @@ public class BookController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Book create(@Valid @RequestBody Book book) {
         return bookService.save(book);
     }
